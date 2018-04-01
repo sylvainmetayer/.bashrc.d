@@ -1,0 +1,3 @@
+#!/bin/sh
+
+gsettings get org.gnome.desktop.peripherals.touchpad send-events
