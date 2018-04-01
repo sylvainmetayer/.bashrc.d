@@ -2,6 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![https://www.shellcheck.net/](https://img.shields.io/badge/%F0%9F%9B%A1-ShellCheck-brightgreen.svg)](https://www.shellcheck.net/)
+[![CircleCI](https://circleci.com/gh/sylvainmetayer/bin.svg?style=svg)](https://circleci.com/gh/sylvainmetayer/bin)
 
 Just a bunch of scripts.
 

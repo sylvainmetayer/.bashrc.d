@@ -2,7 +2,7 @@ version: 2
 jobs:
     build:
         docker:
-            - image: koalaman/shellcheck
+            - image: koalaman/shellcheck-alpine
         steps:
             - checkout
             - run:
@@ -13,6 +13,7 @@ jobs:
                     do 
                         shellcheck "$item"
                         result=$?
+                        echo "$item : $result"
                         if test "$result" -ne 0; then
                             echo "$item failed with code $result"
                             exit $result
