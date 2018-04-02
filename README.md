@@ -69,3 +69,29 @@ Toggle the touchpad.
 Return the state of the touchpad (enabled/disabled)
 
 - Gnome only
+
+### openbar
+
+Disable the firewall. Set default rules to ACCEPT.
+
+- require `iptables`
+
+### parefeu
+
+Enable the firewall and set custom rules.
+
+/!\ Test it before use, or you can be locked out of your own server !
+
+- require `iptables`
+
+### showLastAccess
+
+Show the 10 last access for every nginx site configured.
+
+- require that your log files are named with the following convention `name.access.log`
+
+### showLastError
+
+Show the last 10 errors for every nginx site configured.
+
+- require that your log files are named with the following convention `name.error.log`
