@@ -95,3 +95,8 @@ Show the 10 last access for every nginx site configured.
 Show the last 10 errors for every nginx site configured.
 
 - require that your log files are named with the following convention `name.error.log`
+
+### addDeployKey
+
+Add a SSH key which can be used as deploy key with GitHub. 
+It also add an entry in ssh's user config so the ssh key can be used without conflict with others keys.
