@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo certbot certonly --webroot -w /var/www/acme-challenges/ -d "$1"
+sudo certbot certonly --rsa-key-size 4096 --webroot -w /var/www/acme-challenges/ -d "$1"
