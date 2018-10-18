@@ -8,11 +8,13 @@ Just a bunch of scripts.
 
 ## Setup
 
-- `git clone git@github.com:sylvainmetayer/bin.git ~/bin`
+- `git clone git@github.com:sylvainmetayer/bin.git /opt/custom_bin`
 
-- `find $(pwd) ! \( -name "LICENSE" -o -name "README.md" \) -type f -maxdepth 1 -exec chmod 700 {} \; 2>/dev/null` to make files executables
+- `sudo chown -R $(whoami): /opt/custom_bin` to set up permissions
 
-- Make sure that your bin folder is in your $PATH
+- `find /opt/custom_bin ! \( -name "LICENSE" -o -name "README.md" \) -type f -maxdepth 1 -exec chmod 700 {} \; 2>/dev/null` to make files executables
+
+- `export PATH=$PATH:/opt/custom_bin` Make sure that your bin folder is in your $PATH (add this in your `~/.bashrc`)
 
 ## Scripts
 
