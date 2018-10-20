@@ -9,7 +9,7 @@ jobs:
                 name: Tests
                 shell: /bin/sh
                 command: |
-                    find "$(pwd)" ! \( -name ".gitignore" -o -name "LICENSE" -o -name "README.md" \) -type f -maxdepth 1 -print 2>/dev/null | while read -r item
+                    find "$(pwd)" ! \( -name ".gitignore" -o -name "LICENSE" -o -name "README.md" -o -name "renovate.json" \) -type f -maxdepth 1 -print 2>/dev/null | while read -r item
                     do 
                         shellcheck "$item"
                         result=$?
