@@ -1,3 +1,4 @@
 #!/bin/bash
 # https://askubuntu.com/a/832465
-tmux source-file ~/.tmux.conf
+#tmux source-file ~/.tmux.conf
+pkill -f tmux
