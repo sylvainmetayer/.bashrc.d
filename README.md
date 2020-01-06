@@ -102,3 +102,11 @@ Show the last 10 errors for every nginx site configured.
 
 Add a SSH key which can be used as deploy key with GitHub. 
 It also add an entry in ssh's user config so the ssh key can be used without conflict with others keys.
+
+## Others 
+
+### Gnome 
+
+- Limit alt tab to current workspace `gsettings set org.gnome.shell.app-switcher current-workspace-only true`
+
+- Do not group application when alt tab https://superuser.com/a/860001
