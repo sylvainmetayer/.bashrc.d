@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 convertFile() {
     mv ${1} ${1}.save

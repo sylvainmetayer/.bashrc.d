@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 epsi-network-vbox() {
     echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward > /dev/null

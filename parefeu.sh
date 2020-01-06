@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 parefeu() {    
     sudo iptables -t filter -F

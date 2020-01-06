@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 flush-iptables() {
     sudo iptables -P INPUT ACCEPT

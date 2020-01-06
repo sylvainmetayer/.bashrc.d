@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 kill_me() {
     if [ $# -ne 1 ]; then

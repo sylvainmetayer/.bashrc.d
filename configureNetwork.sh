@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 configureNetwork() {    
     VBOX_NETWORK=( "vboxnet1 192.200.0.0/24" "vboxnet0 192.168.56.0/24" )

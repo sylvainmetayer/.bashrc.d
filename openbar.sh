@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 openbar() {
     sudo iptables -t filter -F
