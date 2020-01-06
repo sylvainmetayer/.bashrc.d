@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 fixRights() {
-    sudo chown -R $(id -u):$(id -g) .
+    sudo chown -R "$(id -u):$(id -g)" .
 }
