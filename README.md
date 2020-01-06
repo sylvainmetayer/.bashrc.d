@@ -1,4 +1,4 @@
-# bin
+# bashrc.d
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![https://www.shellcheck.net/](https://img.shields.io/badge/%F0%9F%9B%A1-ShellCheck-brightgreen.svg)](https://www.shellcheck.net/)
@@ -8,13 +8,18 @@ Just a bunch of scripts.
 
 ## Setup
 
-- `git clone git@github.com:sylvainmetayer/bin.git /opt/custom_bin`
+- `git clone git@github.com:sylvainmetayer/bin.git ~/.bashrc.d`
 
-- `sudo chown -R $(whoami): /opt/custom_bin` to set up permissions
+- Update your `~/.bashrc`
 
-- `find /opt/custom_bin ! \( -name "LICENSE" -o -name "README.md" \) -type f -maxdepth 1 -exec chmod 700 {} \; 2>/dev/null` to make files executables
+```bash
+for file in $HOME/.bashrc.d/*.sh
+do
+    source $file
+done
+```
 
-- `export PATH=$PATH:/opt/custom_bin` Make sure that your bin folder is in your $PATH (add this in your `~/.bashrc`)
+- reload your terminal (`exit` or `source ~/.bashrc`)
 
 ## Scripts
 
