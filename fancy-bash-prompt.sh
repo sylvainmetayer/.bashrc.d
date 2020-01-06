@@ -124,7 +124,7 @@ prompt_command_hook()
 	local user=$USER
 	local host=$HOSTNAME
 	local path="$(shortenPath "$PWD" 20)"
-	local git_branch="$(shortenPath "$(getGitBranch)" 10)"
+	local git_branch="$(shortenPath "$(getGitBranch)" 15)"
 
 
 
